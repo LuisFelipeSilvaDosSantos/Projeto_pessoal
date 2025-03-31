@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        font-family:serif;
+}
+
+.galeria{
+    display: flex;
+    gap: 20px;
+}
+
+.imagem-conteiner{
+    position: relative;
+    width:250px; 
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 01px;
+
+}
+
+.imagem-conteiner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+.imagem-conteiner:hover img{
+    opacity: 0.3;
+}
+
+.poema{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+     font-size: 16px;
+     text-align: center;
+     opacity: 0;
+     transition: 0.7s;
+}
+
+.imagem-conteiner:hover .poema{
+    opacity: 2;
+}
+
